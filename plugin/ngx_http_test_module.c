@@ -63,7 +63,7 @@ ngx_http_test_commands[] =
         offsetof(ngx_http_test_loc_conf_t, test),
         &ngx_http_test_test_post // post handler
     },
-    {   // directive to set 'test_conf' for location configuration
+    {   // directive to set 'test_conf' for main configuration
         ngx_string("test_conf"),
         NGX_HTTP_MAIN_CONF | NGX_CONF_TAKE1,
         ngx_conf_set_str_slot,
